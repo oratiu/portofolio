@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
       <Spacer y={12} />
-      <div className="bg-teal-600 p-3 rounded-medium shadow-lg max-w-[800px]">
+      <div className="bg-teal-600 p-3 rounded-medium shadow-lg">
         <h1 className="text-xl px-3">
           Hello there, I'm <span className="text-yellow-200"> Octavian</span> a
           full stack software engineer based in{" "}
@@ -37,7 +37,7 @@ export default function Home() {
         <p></p>
       </div>
       <Spacer y={12} />
-      <Card className="max-w-[800px] px-3">
+      <Card className="max-w-400 px-3 sm:max-w-[800px]">
         <CardHeader className="flex gap-3">
           <h2 className="text-xl underline">Bio</h2>
         </CardHeader>
@@ -65,10 +65,10 @@ export default function Home() {
           </div>
         </CardBody>
         <Divider />
-        <CardFooter>
-          <p>
-            Right now, I'm available for hire as a remote software engineer as{" "}
-          </p>
+        <CardFooter className="flex flex-row gap-2">
+          <p>My passions: </p>
+          <p>Coffee ☕️</p>/<p>Reading 📚</p>/<p>Fitness 🏋️</p>/<p>Health 🫀</p>
+          /<p>Nutrition 🥦</p>/<p>Tech 💻</p>
         </CardFooter>
       </Card>
       <div className="p-5 rounded-medium gap-3 ">

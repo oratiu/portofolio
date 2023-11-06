@@ -20,11 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <header className="py-0 top-0 sticky z-50 shadow-lg">
+          <header className="top-0 sticky z-50 shadow-lg flex flex-row items-center justify-between center">
             <NavBar />
           </header>
           <main>{children}</main>
-          <footer></footer>
+          {/* <footer className="bottom-0 sticky z-50 shadow-lg flex flex-row items-center justify-between center">this is the footer</footer> */}
         </Providers>
       </body>
     </html>
