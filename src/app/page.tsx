@@ -15,7 +15,7 @@ export default function Home() {
       <Spacer y={12} />
       <div className="bg-teal-600 p-3 rounded-medium shadow-lg">
         <h1 className="text-xl px-3">
-          Hello there, I'm <span className="text-yellow-200"> Octavian</span> a
+          Hello there, I am <span className="text-yellow-200"> Octavian</span> a
           full stack software engineer based in{" "}
           <span className="text-yellow-200">Cluj-Napoca</span>
         </h1>
@@ -23,21 +23,21 @@ export default function Home() {
       <Spacer y={12} />
       <div className="rounded-medium max-w-[800px]">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="bold underline">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
       </div>
       <Spacer y={12} />
-      <Card className="max-w-400 px-3 sm:max-w-[800px]">
+      <Card className="overflow px-3 sm:max-w-[800px]">
         <CardHeader className="flex gap-3">
           <h2 className="text-xl underline">Bio</h2>
         </CardHeader>
@@ -58,7 +58,7 @@ export default function Home() {
             <div className="flex flex-row gap-10">
               <p>2018</p>
               <p>
-                Graduated with a Master's degree in Distributed Systems from
+                Graduated with a Masters degree in Distributed Systems from
                 Babes-Bolyai University
               </p>
             </div>
@@ -73,75 +73,75 @@ export default function Home() {
       </Card>
       <div className="p-5 rounded-medium gap-3 ">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
       </div>
       <div className="p-5 rounded-medium gap-3 ">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
       </div>
       <div className="p-5 rounded-medium gap-3 ">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
       </div>
       <div className="p-5 rounded-medium gap-3 ">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
       </div>
       <div className="p-5 rounded-medium gap-3 ">
         <p>
-          I've been working as a developer since{" "}
+          I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>
         </p>
         <p>
-          In this period I've been able to get my hands on multiple programming
-          languages, frameworks and tools.
+          In this period I have been able to get my hands on multiple
+          programming languages, frameworks and tools.
         </p>
         <p>
-          I've also worked on big enterprise solutions and on small startup
+          I have also worked on big enterprise solutions and on small startup
           projects.
         </p>
         <p></p>
