@@ -4,7 +4,10 @@ import { NextUIProvider } from "@nextui-org/react";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 function getSavedTheme() {
-  const theme = localStorage.getItem("theme");
+  let theme = "light";
+  if (typeof window !== "undefined") {
+    theme = localStorage.getItem("theme") || "";
+  }
   return theme;
 }
 
