@@ -10,6 +10,7 @@ export default function ThemeSwitcher() {
   const { theme, setTheme } = useTheme();
 
   const saveThemePreference = (theme: string) => {
+    if (typeof window === "undefined") return;
     localStorage.setItem("theme", theme);
   };
 
@@ -42,7 +43,13 @@ export default function ThemeSwitcher() {
           )
         }
       >
-        <p className={theme === "dark" ? "text-gray-500 hidden sm:block" : "text-gray-500 hidden sm:block"}>
+        <p
+          className={
+            theme === "dark"
+              ? "text-gray-500 hidden sm:block"
+              : "text-gray-500 hidden sm:block"
+          }
+        >
           Switch to{" "}
           <span className={theme === "dark" ? "text-gray-400" : "text-black"}>
             {theme === "dark" ? "light" : "dark"}
