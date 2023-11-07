@@ -4,10 +4,10 @@ import TimelineItem from "../components/TimelineItem";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col items-center justify-between">
+    <div className="flex flex-col items-center justify-between p-3">
       <Spacer y={12} />
       <div className="max-w-[800px]">
-        <ol className="border-l border-neutral-300 dark:border-neutral-500">
+        <ol className="border-l border-neutral-300 dark:border-neutral-500 pr-3">
           <TimelineItem
             date="09/2015 - 12/2016"
             title="Makronetz"
@@ -44,6 +44,15 @@ const Experience = () => {
               "Implemented multiple functionalities end-to-end focusing on high quality, well tested and readable code.",
               "Focused on end user experience by working closely with the design team.",
               "Refactored the most complex module on the frontend part of the app, increasing it's reusability and performance.",
+            ]}
+          />
+          <TimelineItem
+            date=" 11/2023 - Present"
+            title="Available for hire"
+            paragraphs={[
+              "Working on a iOS app that helps people with their fitness goals.",
+              "Learning NEXT.js and tailwindcss",
+              "Getting deeper into React Native",
             ]}
           />
         </ol>

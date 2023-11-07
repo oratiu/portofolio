@@ -20,20 +20,20 @@ const NavBar = () => {
           <Button
             href="/"
             as={Link}
-            color={path === "/" ? "secondary" : "default"}
-            variant={path === "/" ? "bordered" : "ghost"}
+            color={path === "/" ? "primary" : "default"}
+            variant="light"
             isDisabled={path === "/"}
             disableRipple
           >
-            Home
+            Octavian Ratiu
           </Button>
         </NavbarItem>
         <NavbarItem>
           <Button
             href="/experience"
             as={Link}
-            color={path === "/experience" ? "secondary" : "default"}
-            variant={path === "/experience" ? "bordered" : "ghost"}
+            color={path === "/experience" ? "primary" : "default"}
+            variant="light"
             isDisabled={path === "/experience"}
             disableRipple
           >

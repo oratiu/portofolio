@@ -1,137 +1,48 @@
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  CardHeader,
-  Divider,
-  Link,
-  Spacer,
-} from "@nextui-org/react";
-import Image from "next/image";
+import { Image, Spacer } from "@nextui-org/react";
+import BioCard from "./components/BioCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="flex flex-col items-center justify-between m-6">
       <Spacer y={12} />
-      <div className="bg-teal-600 p-3 rounded-medium shadow-lg">
-        <h1 className="text-xl px-3">
-          Hello there, I am <span className="text-yellow-200"> Octavian</span> a
-          full stack software engineer based in{" "}
-          <span className="text-yellow-200">Cluj-Napoca</span>
+      <div className="bg-gray-300/20 p-3 rounded-medium shadow-lg animate-bounceShort">
+        <h1 className="text-sm sm:text-md px-3 sm:animate-typing sm:overflow-hidden sm:whitespace-nowrap sm:border-r-4 sm:border-r-white sm:pr-5">
+          Hello there, I am{" "}
+          <span className="bold underline uppercase"> Octavian</span> a full
+          stack software engineer based in 📍{" "}
+          <span className="bold underline uppercase">Cluj-Napoca</span>
         </h1>
       </div>
-      <Spacer y={12} />
-      <div className="rounded-medium max-w-[800px]">
+      <Spacer y={6} />
+      <Image width={200} src="placeholder.png" alt="placeholder" />
+      <Spacer y={6} />
+      <div className="rounded-medium max-w-[620px] text-justify flex flex-col gap-3">
         <p>
-          I have been working as a developer since{" "}
-          <span className="bold underline">2015</span>
+          I have been working as a software engineer since{" "}
+          <span className="bold underline">2015</span> and I started being fully
+          remote since 2019.
         </p>
         <p>
           In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
+          programming languages, frameworks and tools, thus being able to become
+          proficient in multiple areas.
         </p>
         <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
+          My experience ranges from working on big enterprise solutions to small
+          startup projects.
         </p>
-        <p></p>
+        <p>
+          I am now on a path of aquiring more knowledge and experience in the
+          field of software engineering and I am looking for new opportunities
+          to grow, I want to become a true artisan of my craft.
+        </p>
       </div>
       <Spacer y={12} />
-      <Card className="overflow px-3 sm:max-w-[800px]">
-        <CardHeader className="flex gap-3">
-          <h2 className="text-xl underline">Bio</h2>
-        </CardHeader>
-        <Divider />
-        <CardBody>
-          <div className="flex flex-col">
-            <div className="flex flex-row gap-10">
-              <p>1994</p>
-              <p>Born in Cluj-Napoca, Romania </p>
-            </div>
-            <div className="flex flex-row gap-10">
-              <p>2016</p>
-              <p>
-                Graduated as a Bachelor of Computer Science from Babes-Bolyai
-                University
-              </p>
-            </div>
-            <div className="flex flex-row gap-10">
-              <p>2018</p>
-              <p>
-                Graduated with a Masters degree in Distributed Systems from
-                Babes-Bolyai University
-              </p>
-            </div>
-          </div>
-        </CardBody>
-        <Divider />
-        <CardFooter className="flex flex-row gap-2">
-          <p>My passions: </p>
-          <p>Coffee ☕️</p>/<p>Reading 📚</p>/<p>Fitness 🏋️</p>/<p>Health 🫀</p>
-          /<p>Nutrition 🥦</p>/<p>Tech 💻</p>
-        </CardFooter>
-      </Card>
-      <div className="p-5 rounded-medium gap-3 ">
-        <p>
-          I have been working as a developer since{" "}
-          <span className="text-yellow-300 bg">2015</span>
-        </p>
-        <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
-        </p>
-        <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
-        </p>
-        <p></p>
+      <div className="m-15 max-w-[620px]">
+        <BioCard />
       </div>
-      <div className="p-5 rounded-medium gap-3 ">
-        <p>
-          I have been working as a developer since{" "}
-          <span className="text-yellow-300 bg">2015</span>
-        </p>
-        <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
-        </p>
-        <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
-        </p>
-        <p></p>
-      </div>
-      <div className="p-5 rounded-medium gap-3 ">
-        <p>
-          I have been working as a developer since{" "}
-          <span className="text-yellow-300 bg">2015</span>
-        </p>
-        <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
-        </p>
-        <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
-        </p>
-        <p></p>
-      </div>
-      <div className="p-5 rounded-medium gap-3 ">
-        <p>
-          I have been working as a developer since{" "}
-          <span className="text-yellow-300 bg">2015</span>
-        </p>
-        <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
-        </p>
-        <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
-        </p>
-        <p></p>
-      </div>
-      <div className="p-5 rounded-medium gap-3 ">
+      <Spacer y={12} />
+      <div className="rounded-medium gap-3 max-w-[620px] text-justify">
         <p>
           I have been working as a developer since{" "}
           <span className="text-yellow-300 bg">2015</span>

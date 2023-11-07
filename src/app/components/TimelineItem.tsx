@@ -18,7 +18,7 @@ const TimelineItem = ({ date, title, paragraphs }: timelineItemProps) => {
         {paragraphs.map((paragraph, index) => (
           <p
             key={index}
-            className="mb-3 text-neutral-500 dark:text-neutral-300"
+            className="mb-3 text-neutral-500 dark:text-neutral-300 text-justify"
           >
             {paragraph}
           </p>
