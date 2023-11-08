@@ -22,7 +22,8 @@ const NavBar = () => {
             as={Link}
             color={path === "/" ? "primary" : "default"}
             variant="light"
-            isDisabled={path === "/"}
+            // isDisabled={path === "/"}
+            is
             disableRipple
           >
             Octavian Ratiu
@@ -34,7 +35,6 @@ const NavBar = () => {
             as={Link}
             color={path === "/experience" ? "primary" : "default"}
             variant="light"
-            isDisabled={path === "/experience"}
             disableRipple
           >
             Experience

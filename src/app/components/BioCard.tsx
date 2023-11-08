@@ -38,11 +38,11 @@ const BioCard = () => {
         </div>
       </CardBody>
       <Divider />
-      <CardFooter className="flex flex-row gap-2 overflow-auto">
+      <CardFooter className="flex flex-col gap-2 overflow-auto">
         <div className="flex flex-col text-center">
           <p className="flex flex-row gap-2 text-center self-center">I ❤️</p>
           <Spacer x={12} />
-          <span className="flex flex-row gap-2 text-center">
+          <span className="flex flex-row gap-2 text-center items-center justify-center align-middle">
             <p>Tech 💻</p>
             <p>Coffee ☕️</p>
             <p>Reading 📚</p>

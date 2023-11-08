@@ -6,10 +6,13 @@ export default function Home() {
     <main className="flex flex-col items-center justify-between m-6">
       <Spacer y={12} />
       <div className="bg-gray-300/20 p-3 rounded-medium shadow-lg animate-bounceShort">
-        <h1 className="text-sm sm:text-md px-3 sm:animate-typing sm:overflow-hidden sm:whitespace-nowrap sm:border-r-4 sm:border-r-white sm:pr-5">
+        <h1 className="text-md sm:text-md px-3 sm:animate-typing sm:overflow-hidden sm:whitespace-nowrap sm:border-r-4 sm:border-r-white sm:pr-5">
           Hello there, I am{" "}
-          <span className="bold underline uppercase"> Octavian</span> a full
-          stack software engineer based in 📍{" "}
+          <span className="bold underline uppercase text-primary">
+            {" "}
+            Octavian
+          </span>{" "}
+          a full stack software engineer based in 📍{" "}
           <span className="bold underline uppercase">Cluj-Napoca</span>
         </h1>
       </div>
@@ -43,19 +46,10 @@ export default function Home() {
       </div>
       <Spacer y={12} />
       <div className="rounded-medium gap-3 max-w-[620px] text-justify">
-        <p>
-          I have been working as a developer since{" "}
-          <span className="text-yellow-300 bg">2015</span>
-        </p>
-        <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools.
-        </p>
-        <p>
-          I have also worked on big enterprise solutions and on small startup
-          projects.
-        </p>
-        <p></p>
+        Skills
+      </div>
+      <div className="rounded-medium gap-3 max-w-[620px] text-justify">
+        Contact
       </div>
     </main>
   );
