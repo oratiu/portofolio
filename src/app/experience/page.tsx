@@ -7,7 +7,7 @@ const Experience = () => {
     <div className="flex flex-col items-center justify-between p-3">
       <Spacer y={12} />
       <div className="max-w-[800px]">
-        <ol className="border-l border-neutral-300 dark:border-neutral-500 pr-3">
+        <ol className="border-l border-primary pr-3 -mt-12">
           <TimelineItem
             date="09/2015 - 12/2016"
             title="Makronetz"
@@ -52,7 +52,7 @@ const Experience = () => {
             paragraphs={[
               "Working on a iOS app that helps people with their fitness goals.",
               "Learning NEXT.js and tailwindcss",
-              "Getting deeper into React Native",
+              "Getting deeper into React Native by building an awesome iOS app.",
             ]}
           />
         </ol>

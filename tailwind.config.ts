@@ -9,6 +9,13 @@ const config: Config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    colors: {
+      text: "var(--text)",
+      background: "var(--background)",
+      primary: "var(--primary)",
+      secondary: "var(--secondary)",
+      accent: "var(--accent)",
+    },
     extend: {
       keyframes: {
         typing: {
@@ -42,17 +49,52 @@ const config: Config = {
         light: {
           layout: {}, // light theme layout tokens
           colors: {
-            background: "#F0E7DB",
+            background: "#fffaeb",
+            foreground: "#130e01",
+            primary: {
+              DEFAULT: "#ff8400",
+              foreground: "#130e01",
+            },
+            secondary: {
+              DEFAULT: "#fff5d6",
+              foreground: "#130e01",
+            },
           }, // light theme colors
         },
         dark: {
           layout: {}, // dark theme layout tokens
           colors: {
-            background: "#232020",
+            background: "#140f00",
+            foreground: "#fef9ec", // text color apparently
+            primary: {
+              DEFAULT: "#ff8400",
+              foreground: "#fef9ec",
+            },
+            secondary: {
+              DEFAULT: "#291f00",
+              foreground: "#fef9ec",
+            },
           }, // dark theme colors
         },
       },
     }),
   ],
 };
+
+// @layer base {
+//   :root {
+//     --text: #130e01;
+//     --background: #fffaeb;
+//     --primary: #ff8400;
+//     --secondary: #fff5d6;
+//     --accent: #cf4307;
+//   }
+//   .dark {
+//     --text: #fef9ec;
+//     --background: #140f00;
+//     --primary: #ff8400;
+//     --secondary: #291f00;
+//     --accent: #f86c30;
+//   }
+// }
 export default config;

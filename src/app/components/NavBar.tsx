@@ -14,7 +14,7 @@ const NavBar = () => {
   const path = usePathname();
 
   return (
-    <Navbar className="bg-transparent backdrop-blur">
+    <Navbar className="bg-secondary/20 backdrop-blur">
       <NavbarContent className="sm:flex gap-4" justify="center">
         <NavbarItem>
           <Button
@@ -22,8 +22,6 @@ const NavBar = () => {
             as={Link}
             color={path === "/" ? "primary" : "default"}
             variant="light"
-            // isDisabled={path === "/"}
-            is
             disableRipple
           >
             Octavian Ratiu

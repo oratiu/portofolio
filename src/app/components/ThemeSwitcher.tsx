@@ -3,8 +3,8 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Skeleton, Switch } from "@nextui-org/react";
-import { MoonIcon } from "../icons/MoonIcon";
-import { SunIcon } from "../icons/SunIcon";
+import MoonIcon from "../icons/MoonIcon";
+import SunIcon from "../icons/SunIcon";
 
 export default function ThemeSwitcher() {
   const [hasMounted, setHasMounted] = useState(false);

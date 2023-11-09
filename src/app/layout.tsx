@@ -1,10 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Providers from "./providers";
 import NavBar from "./components/NavBar";
-
-const inter = Inter({ subsets: ["latin"] });
+import PageAnimation from "./components/utils/PageAnimation";
 
 export const metadata: Metadata = {
   title: "Octavian Ratiu",
@@ -18,29 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className="">
         <Providers>
-          <header className="top-0 sticky z-50 shadow-lg flex flex-row items-center justify-between center">
+          {/* <PageAnimation /> */}
+          <header className="top-0 sticky z-20 shadow-lg flex flex-row items-center justify-between center">
             <NavBar />
           </header>
-          <main>
-            <div className="area">
-              <ul className="circles">
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-              </ul>
-            </div>
-            {children}
-          </main>
-          {/* <footer className="bottom-0 sticky z-50 shadow-lg flex flex-row items-center justify-between center">this is the footer</footer> */}
+          <main className="z-10">{children}</main>
         </Providers>
       </body>
     </html>

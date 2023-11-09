@@ -10,12 +10,16 @@ import React from "react";
 
 const BioCard = () => {
   return (
-    <Card isBlurred className="max-w-[400px] sm:max-w-[800px]">
-      <CardHeader className="flex gap-3">
+    <Card
+      isBlurred
+      className="max-w-[400px] sm:max-w-[800px] bg-secondary"
+      isHoverable
+    >
+      <CardHeader className="flex gap-3 bg-secondary p-3">
         <h2 className="text-xl underline">Bio</h2>
       </CardHeader>
       <Divider />
-      <CardBody>
+      <CardBody className="bg-secondary p-3">
         <div className="flex flex-col gap-6">
           <div className="flex flex-row gap-10">
             <p>1994</p>
@@ -38,11 +42,11 @@ const BioCard = () => {
         </div>
       </CardBody>
       <Divider />
-      <CardFooter className="flex flex-col gap-2 overflow-auto">
+      <CardFooter className="flex flex-col gap-2 overflow-auto bg-secondary p-3">
         <div className="flex flex-col text-center">
           <p className="flex flex-row gap-2 text-center self-center">I ❤️</p>
           <Spacer x={12} />
-          <span className="flex flex-row gap-2 text-center items-center justify-center align-middle">
+          <div className="flex flex-row gap-2 text-center pl-16 sm:pl-0">
             <p>Tech 💻</p>
             <p>Coffee ☕️</p>
             <p>Reading 📚</p>
@@ -50,7 +54,8 @@ const BioCard = () => {
             <p>Health 🫀</p>
             <p>Nutrition 🥦</p>
             <p>Movies 🎬</p>
-          </span>
+            <p>Dogs 🦮</p>
+          </div>
         </div>
       </CardFooter>
     </Card>
