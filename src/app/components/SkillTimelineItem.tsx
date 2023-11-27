@@ -45,8 +45,6 @@ const SkillTimelineItem = ({
         </h1>
       </div>
       <motion.div
-        initial="offscreen"
-        whileInView="onscreen"
         variants={cardVariants}
         className="bg-secondary rounded-2xl shadow-xl sm:w-5/12 px-6 py-6 sm:order-none"
       >
