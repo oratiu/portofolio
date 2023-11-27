@@ -2,7 +2,6 @@ import "./globals.css";
 import type { Metadata } from "next";
 import Providers from "./providers";
 import NavBar from "./components/NavBar";
-import PageAnimation from "./components/utils/PageAnimation";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
@@ -19,7 +18,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="">
         <Providers>
-          {/* <PageAnimation /> */}
           <header className="top-0 sticky z-20 shadow-lg flex flex-row items-center justify-between center">
             <NavBar />
           </header>

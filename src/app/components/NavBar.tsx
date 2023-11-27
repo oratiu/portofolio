@@ -48,7 +48,7 @@ const NavBar = () => {
         </NavbarContent>
       </Navbar>
       <motion.div
-        className="fixed top-0 left-0 right-0 h-1.5 origin-left bg-accent z-30"
+        className="fixed top-0 left-0 right-0 h-1.5 origin-left bg-accent z-50"
         style={{ scaleX: scrollYProgress }}
       />
     </>
