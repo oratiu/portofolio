@@ -1,3 +1,5 @@
+"use client";
+import { Variants, motion } from "framer-motion";
 import React from "react";
 
 type timelineItemProps = {
@@ -7,6 +9,22 @@ type timelineItemProps = {
   left?: boolean;
 };
 
+const cardVariants: Variants = {
+  offscreen: {
+    y: 200,
+    opacity: 0,
+  },
+  onscreen: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1.5,
+    },
+  },
+};
+
 const SkillTimelineItem = ({
   index,
   title,
@@ -14,7 +32,10 @@ const SkillTimelineItem = ({
   left = false,
 }: timelineItemProps) => {
   return (
-    <div
+    <motion.div
+      initial="offscreen"
+      whileInView="onscreen"
+      viewport={{ once: true, amount: 0.5 }}
       className={`mb-8 flex sm:justify-between items-center animate-appearance-in ${
         left ? "sm:flex-row-reverse " : "sm:flex-row"
       } `}
@@ -25,7 +46,12 @@ const SkillTimelineItem = ({
           {index}
         </h1>
       </div>
-      <div className="bg-secondary rounded-2xl shadow-xl sm:w-5/12 px-6 py-6 sm:order-none">
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        variants={cardVariants}
+        className="bg-secondary rounded-2xl shadow-xl sm:w-5/12 px-6 py-6 sm:order-none"
+      >
         <h3 className="mb-3 font-bold text-primary text-xl underline text-left">
           {title}
         </h3>
@@ -34,8 +60,8 @@ const SkillTimelineItem = ({
             {paragraph}
           </p>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

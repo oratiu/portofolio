@@ -2,10 +2,9 @@ import { Button, Image, Link, Spacer } from "@nextui-org/react";
 import BioCard from "./components/BioCard";
 import Skills from "./components/Skills";
 import GithubIcon from "./icons/GithubIcon";
-import LinkedInIcon from "./icons/LinkedInIcon";
-import InstagramIcon from "./icons/InstagramIcon";
 import Title from "./components/atoms/Title";
 import LinkIcon from "./icons/LinkIcon";
+import Socials from "./components/Socials";
 
 export default function Home() {
   return (
@@ -22,35 +21,7 @@ export default function Home() {
       <Spacer y={6} />
       <Image width={150} src="me.png" alt="placeholder" />
       <Spacer y={6} />
-      <div className="flex flex-col bg-secondary rounded-xl p-3 shadow-xl gap-3">
-        <h1 className="text-left text-xl underline">Socials</h1>
-        <div className="flex flex-row gap-6  ">
-          <a
-            href="https://github.com/oratiu"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-row gap-2 items-center max-w-8"
-          >
-            <GithubIcon className="hover:fill-accent w-12 h-12 fill-primary" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/octavian-ratiu-2912805b/?locale=en_US"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-row gap-2 items-center max-w-8"
-          >
-            <LinkedInIcon className="hover:fill-accent w-12 h-12 fill-primary" />
-          </a>
-          <a
-            href="https://google.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex flex-row gap-2 items-center max-w-8"
-          >
-            <InstagramIcon className="hover:fill-accent w-12 h-12 fill-primary" />
-          </a>
-        </div>
-      </div>
+      <Socials />
       <Spacer y={6} />
 
       <div className="rounded-medium max-w-[620px] text-justify flex flex-col gap-3">
@@ -122,7 +93,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* <Spacer y={3} /> */}
+        <Spacer y={3} />
         <div>
           My main open source contribution lies within the health and research
           sector, where I have been working on a platform that helps researchers
