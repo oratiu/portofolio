@@ -31,7 +31,7 @@ const OpenSourceContributions = () => {
       className="rounded-medium gap-3 max-w-[400px] sm:max-w-[500px] text-justify flex flex-col justify-center "
     >
       <Title title="Open source contributions" />
-      <div className="bg-secondary p-4 rounded-lg shadow-xl hover:bg-secondary/60">
+      <div className="bg-secondary p-4 rounded-lg shadow-xl hover:bg-secondary/60 border-1 border-primary">
         <div className="flex flex-row justify-between">
           <div className="text-primary hover:text-accent flex flex-row gap-3">
             <GithubIcon className="w-8 h-8 fill-accent" />

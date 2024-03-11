@@ -9,12 +9,12 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between m-6">
       <Spacer y={12} />
-      <div className="bg-secondary p-3 rounded-medium shadow-lg animate-bounceShort">
+      <div className="bg-secondary p-3 rounded-medium shadow-lg">
         <h1 className="text-md sm:text-md px-3 sm:animate-typing sm:overflow-hidden sm:whitespace-nowrap sm:border-r-4 sm:border-r-white sm:pr-5">
           Hello there, I am{" "}
-          <span className="bold uppercase text-primary"> Octavian</span> a full
-          stack software engineer based in 📍{" "}
-          <span className="bold uppercase">Cluj-Napoca</span>
+          <span className="bold uppercase text-accent"> Octavian</span> a full
+          stack software engineer based in {" "}
+          <span className="bold uppercase">Cluj-Napoca 📍</span>
         </h1>
       </div>
       <Spacer y={6} />
@@ -24,7 +24,7 @@ export default function Home() {
       <Spacer y={6} />
 
       <div className="rounded-medium max-w-[620px] text-justify flex flex-col gap-3">
-        <h1 className="text-left text-xl underline">About me</h1>
+        <h1 className="text-left text-xl underline text-accent">About me</h1>
         <p>
           I have been working as a software engineer since{" "}
           <span className="bold">2015</span> and I started being fully remote
@@ -46,7 +46,7 @@ export default function Home() {
         </p>
       </div>
       <Spacer y={12} />
-      <div className="m-15 max-w-[620px]">
+      <div className="max-w-[620px]">
         <BioCard />
       </div>
       <Spacer y={12} />

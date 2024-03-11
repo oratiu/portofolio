@@ -12,11 +12,11 @@ const BioCard = () => {
   return (
     <Card
       isBlurred
-      className="max-w-[400px] sm:max-w-[800px] bg-secondary"
+      className="max-w-sm sm:max-w-[800px] bg-secondary shadow-xl border-1 border-primary"
       isHoverable
     >
       <CardHeader className="flex gap-3 bg-secondary p-3">
-        <h2 className="text-xl underline">Bio</h2>
+        <h2 className="text-xl underline text-primary">Bio</h2>
       </CardHeader>
       <Divider />
       <CardBody className="bg-secondary p-3">
@@ -42,20 +42,17 @@ const BioCard = () => {
         </div>
       </CardBody>
       <Divider />
-      <CardFooter className="flex flex-col gap-2 overflow-auto bg-secondary p-3">
-        <div className="flex flex-col text-center">
-          <p className="flex flex-row gap-2 text-center self-center">I ❤️</p>
-          <Spacer x={12} />
-          <div className="flex flex-row gap-2 text-center pl-16 sm:pl-0">
-            <p>Tech 💻</p>
-            <p>Coffee ☕️</p>
-            <p>Reading 📚</p>
-            <p>Fitness 🏋️</p>
-            <p>Health 🫀</p>
-            <p>Nutrition 🥦</p>
-            <p>Movies 🎬</p>
-            <p>Dogs 🦮</p>
-          </div>
+      <CardFooter className="flex flex-col gap-2 overflow-auto bg-secondary">
+        <p className="flex flex-row gap-2 text-center self-center">I ❤️</p>
+        <div className="flex flex-row gap-2 text-center max-w-xs sm:max-w-max">
+          <p>Tech 💻</p>
+          <p>Coffee ☕️</p>
+          <p>Reading 📚</p>
+          <p>Fitness 🏋️</p>
+          <p>Health 🫀</p>
+          <p>Nutrition 🥦</p>
+          <p>Movies 🎬</p>
+          <p>Dogs 🦮</p>
         </div>
       </CardFooter>
     </Card>

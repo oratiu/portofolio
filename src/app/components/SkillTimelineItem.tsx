@@ -46,7 +46,7 @@ const SkillTimelineItem = ({
       </div>
       <motion.div
         variants={cardVariants}
-        className="bg-secondary rounded-2xl shadow-xl sm:w-5/12 px-6 py-6 sm:order-none"
+        className="bg-secondary rounded-2xl shadow-xl sm:w-5/12 px-6 py-6 sm:order-none border-1 border-primary/40"
       >
         <h3 className="mb-3 font-bold text-primary text-xl underline text-left">
           {title}

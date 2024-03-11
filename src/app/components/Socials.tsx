@@ -7,7 +7,7 @@ import SocialItem from "./SocialItem";
 const Socials = () => {
   return (
     <div className="flex flex-col bg-secondary rounded-xl p-3 shadow-xl gap-3">
-      <h1 className="text-left text-xl underline">Socials</h1>
+      <h1 className="text-left text-xl underline text-primary">Socials</h1>
       <div className="flex flex-row gap-9">
         <SocialItem
           icon={<GithubIcon />}
