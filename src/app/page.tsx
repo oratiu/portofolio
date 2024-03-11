@@ -51,7 +51,7 @@ export default function Home() {
           professionally and personally, as I strive to become a true artisan in
           my field. If you are looking for a committed, versatile, and
           results-driven software engineer, I would be thrilled to discuss how
-          my skills and experience can contribute to your organization's
+          my skills and experience can contribute to your organization&apos;s
           success.
         </p>
       </div>
