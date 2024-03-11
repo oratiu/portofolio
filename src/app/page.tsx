@@ -11,9 +11,9 @@ export default function Home() {
       <Spacer y={12} />
       <div className="bg-secondary p-3 rounded-medium shadow-lg">
         <h1 className="text-md sm:text-md px-3 sm:animate-typing sm:overflow-hidden sm:whitespace-nowrap sm:border-r-4 sm:border-r-white sm:pr-5">
-          Hello there, I am{" "}
-          <span className="bold uppercase text-accent"> Octavian</span> a full
-          stack software engineer based in {" "}
+          Greetings! I&apos;m{" "}
+          <span className="bold uppercase text-accent"> Octavian</span> a
+          full-stack software engineer based in the vibrant city of{" "}
           <span className="bold uppercase">Cluj-Napoca 📍</span>
         </h1>
       </div>
@@ -22,27 +22,37 @@ export default function Home() {
       <Spacer y={6} />
       <Socials />
       <Spacer y={6} />
-
       <div className="rounded-medium max-w-[620px] text-justify flex flex-col gap-3">
         <h1 className="text-left text-xl underline text-accent">About me</h1>
         <p>
-          I have been working as a software engineer since{" "}
-          <span className="bold">2015</span> and I started being fully remote
-          since <span className="bold">2019</span>.
+          As a software engineer with a career spanning since{" "}
+          <span className="bold">2015</span>, I have had the privilege of
+          working remotely since <span className="bold">2019</span>. This
+          experience has allowed me to collaborate with diverse teams and
+          contribute to projects on a global scale.{" "}
         </p>
         <p>
-          In this period I have been able to get my hands on multiple
-          programming languages, frameworks and tools, thus being able to become
-          proficient in multiple areas.
+          Throughout my professional journey, I have acquired extensive
+          knowledge and hands-on experience in various programming languages,
+          frameworks, and tools. This versatility has enabled me to become
+          proficient in multiple areas of software development, making me a
+          well-rounded and adaptable engineer.
         </p>
         <p>
-          My experience ranges from working on big enterprise solutions to small
-          startup projects.
+          My expertise encompasses working on large-scale enterprise solutions
+          as well as fast-paced startup projects. I thrive in challenging
+          environments that push me to innovate, problem-solve, and deliver
+          high-quality software solutions.
         </p>
         <p>
-          I am now on a path of aquiring more knowledge and experience in the
-          field of software engineering and I am looking for new opportunities
-          to grow, I want to become a true artisan of my craft.
+          Currently, I am dedicated to expanding my skill set and staying at the
+          forefront of the ever-evolving software engineering landscape. I am
+          actively seeking new opportunities that will allow me to grow both
+          professionally and personally, as I strive to become a true artisan in
+          my field. If you are looking for a committed, versatile, and
+          results-driven software engineer, I would be thrilled to discuss how
+          my skills and experience can contribute to your organization's
+          success.
         </p>
       </div>
       <Spacer y={12} />
@@ -60,7 +70,12 @@ export default function Home() {
       <Spacer y={12} />
       <div className="rounded-medium gap-3 max-w-[620px] text-justify">
         <a href="./mycv.pdf">
-          <Button color="primary" variant="bordered" href="/experience">
+          <Button
+            color="primary"
+            className="hover:border-accent hover:text-accent"
+            variant="bordered"
+            href="/experience"
+          >
             Get my resume
           </Button>
         </a>

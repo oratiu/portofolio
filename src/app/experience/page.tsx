@@ -47,12 +47,20 @@ const Experience = () => {
             ]}
           />
           <TimelineItem
-            date=" 11/2023 - Present"
-            title="Available for hire"
+            date=" 01/2024 - Present"
+            title="Independent Contractor"
             paragraphs={[
-              "Working on a iOS app that helps people with their fitness goals.",
-              "Learning NEXT.js and tailwindcss",
-              "Getting deeper into React Native by building an awesome iOS app.",
+              "Working with a well known client in the specialty coffee industry to bring their business online.",
+              "Providing a robust e-commerce solution that is easy to use and maintain, using BigCommerce and Next.js",
+              "Handling all the project management, from the initial discovery phase to the final delivery and support.",
+            ]}
+          />
+          <TimelineItem
+            date=" meanwhile"
+            title="My side projects"
+            paragraphs={[
+              "Working on a React Native iOS app that helps people with their health and fitness goals.",
+              "Getting ever deeper into React and Next.js",
             ]}
           />
         </ol>
